@@ -106,12 +106,7 @@ USE SCHEMA SALES_DATA;
 - If you did it in the right way, you will be notice that the status of warehouse, datatable, and schema have been [changed](https://github.com/MehdiMahmoodi/Snowflake/blob/master/15.png)
     - Also you can check your status by running the following queries in snosql:
     select CURRENT_WAREHOUSE(),CURRENT_DATABASE(),CURRENT_SCHEMA(); 
-    the result should be a table like this:
-    +---------------------+--------------------+------------------+
-| CURRENT_WAREHOUSE() | CURRENT_DATABASE() | CURRENT_SCHEMA() |
-|---------------------+--------------------+------------------|
-| TRAINING_WH         | SALES_MEHDI_DB     | SALES_DATA       |
-+---------------------+--------------------+------------------+
+ 
 
 ##### Put data files in staging area
 ***Snow flake has 3 kinds of staging areas: the user stage, the table stage, and the name stage. In this repo we are going to load our data in table stage***
