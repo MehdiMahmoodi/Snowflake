@@ -117,7 +117,7 @@ USE SCHEMA SALES_DATA;
 ***Snow flake has 3 kinds of staging areas: the user stage, the table stage, and the name stage. In this repo we are going to load our data in table stage***
 - you need to run the pu command in your snowsql as below:
 put file://<path_to_file>/<filename> @[<namespace>.]<int_stage_name>[/<path>]  | @[<namespace>.]%<table_name>[/<path>]  | @~[/<path>];
-As an example you can use the [sample data](7) in this repo and run the following code. Keep in mind you need to update the path-to-file,
+As an example you can use the [sample data](https://github.com/MehdiMahmoodi/Snowflake/blob/master/getting-started.zip) in this repo and run the following code. Keep in mind you need to update the path-to-file,
 
 put file://C:\Users\mmahmoo\Desktop\DataEngineering\Snowflake\Repo\Sample_Data(7)\employees0*.csv @SALES_MEHDI_DB.SALES_DATA.%emp_basic;
 
